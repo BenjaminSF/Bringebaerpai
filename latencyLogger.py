@@ -8,7 +8,7 @@ i = datetime.datetime.now()
 log_file = 'latency-tester.' + i.strftime('%Y.%m.%d.%H.%M.%S') + '.log'
 
 # SET YOUR PING RESPONSE TIME THRESHOLD HERE, IN MILLISECONDS
-threshold = 250
+threshold = 0
 
 # WHO SHOULD WE RUN THE PING TEST AGAINST
 ping_destination = 'www.google.com'
