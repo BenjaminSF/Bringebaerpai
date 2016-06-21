@@ -29,6 +29,7 @@ print(line)
 child = pexpect.spawn(ping_command)
 child.timeout=1200
 
+child.readline()
 while 1:
     line = child.readline()
     if not line:
