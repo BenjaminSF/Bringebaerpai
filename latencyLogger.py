@@ -42,7 +42,7 @@ while 1:
 
     if count > 0:
         ping_time = float(line[line.find(b'time=') + 5:line.find(b' ms')])
-        line = time.strftime("%m/%d/%Y %H:%M:%S") + ": " + str(ping_time)
+        line = time.strftime("%d.%m.%Y %H:%M:%S") + ": " + str(ping_time)
         print(str(count) + ": " + line)
 
         if ping_time > threshold:
